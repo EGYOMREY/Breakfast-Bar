@@ -1,6 +1,8 @@
 # The Breakfast Bar
 
-I took this design from Dribble.com and built a single page website with it.
+I took [this design](https://egyomrey.github.io/Breakfast-Bar/Mockup%20from%20Dribbble.jpg) from Dribble.com and built a single page website with it.
+
+[DIRECT LINK](https://egyomrey.github.io/Breakfast-Bar/build/index.html)
 
 
 ## How to use this project?
