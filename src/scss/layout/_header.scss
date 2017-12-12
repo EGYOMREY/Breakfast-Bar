@@ -1,0 +1,35 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+
+.header {
+    @include respond-to("medium") {
+        width: 90%;
+        margin: auto;
+    }
+
+
+    &__content {
+        @extend %grid;
+
+        z-index: 99;
+        position: fixed;
+        width: 100%;
+        background: rgba(92, 51, 29, 0.5);
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+
+        @include respond-to("medium") {
+            width: 90%;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+    }
+
+    &__logo {
+        align-self: center;
+        padding: 0;
+        margin: 0;
+    }
+}

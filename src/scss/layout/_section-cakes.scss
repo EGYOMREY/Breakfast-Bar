@@ -1,0 +1,73 @@
+// Main cakes section
+.section-cakes {
+    @extend %grid;
+
+    
+    background-image: url("../images/noise-bg.png");
+
+    @include respond-to("small") {
+        width: 90%;
+        margin: auto;
+       
+    }
+}
+// Holds the description and the pictures container inside
+.cakes {
+    @extend %grid;
+ flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+
+     @include respond-to("medium") {
+             flex-direction: row;
+        }
+
+    &__description {
+        padding-top: 3em;
+        width: 100%;
+        text-align: center;
+
+        @include respond-to("medium") {
+            width: 50%;
+            line-height: 1.6rem;
+        }
+
+
+        h3 {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            color: $light-brown;
+        }
+
+        h4 {
+            font-size: 1.5rem;
+            margin-bottom: 1em;
+        }
+
+
+    }
+
+    &__text {
+            display: inline-block;
+            padding: 2em;
+            line-height: 2em;
+
+            @include respond-to("small") {
+                width: 70%;
+                margin: auto;
+            }
+
+             @include respond-to("medium") {
+                font-size: 0.89rem;
+            }
+        }
+
+    &__pictures {
+        width: 100%;
+
+        @include respond-to("medium") {
+            width: 50%;
+        }
+    }
+}

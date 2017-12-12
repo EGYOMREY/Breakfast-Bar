@@ -1,0 +1,47 @@
+.hero-section {
+    @extend %grid;
+
+    height: 100vh;
+    background-image: url("../images/hero-img.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: 6.5em;
+
+    @include respond-to("medium") {
+        width: 90%;
+        margin: auto;
+    }
+
+
+    &__description {
+        width: 80%;
+        background: rgba(92, 51, 29, 0.3);
+
+        @include respond-to("small") {
+            font-size: 1.5rem;
+            margin-bottom: 2em;
+        }
+
+
+        @include respond-to("medium") {
+            width: 50%;
+            font-size: 1rem;
+        }
+    }
+
+    h1 {
+        font-size: 3rem;
+
+        @include respond-to("small") {
+            font-size: 4.9rem;
+        }
+    }
+}

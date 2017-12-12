@@ -1,0 +1,8 @@
+.main-container {
+    width: $col-12;
+
+    @include respond-to("medium") {
+        width: 90%;
+        margin: auto;
+    }
+}

@@ -1,0 +1,52 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+.btn-container {
+    display: flex;
+}
+
+.btn {
+    border: none;
+    padding: 0.9em 2.9em;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-family: $font-stack;
+
+    &--gray{
+        color: $light-brown;
+        background-color: transparent;
+        border: 1px solid $light-brown;
+        margin: 1em;
+
+        &:hover{
+            color: $yellow;
+            background-color: $brown;
+        }
+    }
+
+    &--ingredient{
+        border: 1px solid $white;
+        &:hover{
+            color: $yellow;
+            background-color: $brown;
+        }
+    }
+
+    
+}
+
+.btn--menu {
+    background: rgba(24, 13, 7, 0.5);
+    border: 1px solid lighten($light-brown, 25%);
+    color: $white;
+    margin-bottom: 1em;
+
+    
+
+    &:hover {
+        background-color: darken($light-brown, 5%);
+    }
+}
+

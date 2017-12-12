@@ -1,0 +1,64 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+@font-face {
+    font-family: 'yeseva_oneregular';
+    src: url('../font/yeseva_one-webfont.woff2') format('woff2'),
+         url('../font/yeseva_one-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+$font-stack: 'yeseva_oneregular', sans-serif;
+
+
+/// COLORS
+$white: #FFF;
+$brown: rgb(92, 51, 29);
+$light-brown: #b26b3c;
+$dark-brown: #180d07;
+$black: #393939;
+$light-pink: #e9cfbe;
+$yellow: #eca551;
+$light-gray: #d1d1cf;
+$gold: #fee46f;
+$lighter-gray: #f1f1ef;
+$green: #76805a;
+$red: #d26441;
+
+
+// BODY
+//
+// Settings for the `<body>` element.
+
+$body-bg: $brown;
+$body-color: $black;
+
+// LINKS
+//
+// Style anchor elements.
+$link-color: $white;
+$link-decoration: none;
+$link-hover-color: darken($light-brown, 5%);
+$link-hover-decoration: none;
+
+// Fonts
+//
+// Font, line-height, and color for body text, headings, and more.
+$font-size-base: 1.1rem;
+$h1-font-size: $font-size-base * 2.2 !default;
+$h2-font-size: $font-size-base * 2 !default;
+$h3-font-size: $font-size-base * 1.75 !default;
+$h4-font-size: $font-size-base * 1.5 !default;
+$h5-font-size: $font-size-base * 1.25 !default;
+$h6-font-size: $font-size-base !default;
+
+// Breakpoints
+$breakpoints: (
+	"small": (min-width: 580px),
+	"sm-md": (min-width: 650px),
+	 "medium": (min-width: 900px),
+	  "large": (min-width: 1200px)
+	  );

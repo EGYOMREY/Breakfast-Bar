@@ -1,0 +1,20 @@
+// -----------------------------------------------------------------------------
+// This component is in the BREAKFAST section, with the croissant
+// -----------------------------------------------------------------------------
+
+.suggestion-top {
+    @extend %grid;
+
+    align-content: center;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+
+    &__name {
+        font-size: 0.8rem;
+        
+        padding: 0.1em 0;
+        display: inline;
+    }
+}

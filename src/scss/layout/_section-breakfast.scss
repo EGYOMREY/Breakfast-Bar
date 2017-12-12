@@ -1,0 +1,95 @@
+// The main big section
+.section-breakfast {
+    @extend %grid;
+
+    text-align: center;
+    color: $white;
+    background-image: url("../images/breakfast_bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include respond-to("small") {
+        width: 90%;
+        margin: auto;
+    }
+}
+
+// The container that holds 2 containers inside (menu & suggestion)
+.breakfast {
+    @extend %grid;
+
+    padding: 2em 0;
+    width: 100%;
+    line-height: 3rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+
+    @include respond-to("large") {
+        flex-direction: row;
+        width: 70%;
+        margin-left: 15em;
+    }
+
+
+    &__menu {
+        @extend %grid;
+
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+
+        @include respond-to("medium") {
+            width: 50%;
+            padding-top: 2.5em;
+        }
+
+
+        h2 {
+            font-size: 3.5rem;
+        }
+
+        h3 {
+            font-size: 1.3rem;
+            color: $light-pink;
+            margin-bottom: 1em;
+        }
+    }
+
+    &__suggestion {
+        width: 100%;
+        color: $black;
+        background-color: $lighter-gray;
+        border: 15px solid $light-gray;
+        padding-bottom: 5em;
+
+        @include respond-to("medium") {
+            width: 50%;
+            padding-bottom: 2em;
+        }
+
+
+        h2 {
+            padding: 0.2em;
+
+            @include respond-to("medium") {
+                font-size: 1.8rem;
+            }
+        }
+
+        p {
+            width: 80%;
+            line-height: 2em;
+            margin: auto;
+            padding: 1em 0;
+
+            @include respond-to("medium") {
+                font-size: 0.8rem;
+            }
+        }
+    }
+}

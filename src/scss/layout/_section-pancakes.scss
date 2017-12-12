@@ -1,0 +1,111 @@
+
+// Main pancake section
+.section-pancakes {
+    background-image: url("../images/pancake_bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @include respond-to("small") {
+        width: 90%;
+        margin: auto;
+    }
+}
+
+//Contains 2 divs inside (decorative img and pancake container)
+.pancakes-block {
+    @extend %grid;
+
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    flex-direction: row;
+    width: 100%;
+
+    @include respond-to("small") {
+        width: 80%;
+        margin-left: 5vh;
+    }
+
+
+    @include respond-to("large") {
+        width: 70%;
+        margin-left: 15vh;
+    }
+}
+// Holds 2 divs inside (__description and __slide)
+.pancakes-container {
+    background-color: $white;
+    width: 100%;
+
+    @include respond-to("medium") {
+        width: 50%;
+    }
+
+
+    &__description {
+        padding-top: 3em;
+        width: 100%;
+    }
+
+    &__title {
+        padding-left: 2em;
+
+        h3 {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            color: $light-brown;
+        }
+    }
+
+    &__text {
+        padding: 1em;
+        font-size: 0.9rem;
+
+        @include respond-to("small") {
+            display: inline-block;
+            padding: 2em;
+            line-height: 1.7em;
+            margin: auto;
+        }
+
+
+        @include respond-to("medium") {
+            font-size: 0.89rem;
+            padding: 1em 2em;
+        }
+    }
+
+    &__slide {
+        @extend %grid;
+
+        padding: 1em 0;
+        justify-content: center;
+        background-image: url("../images/noise-bg.png");
+
+        &:hover {
+            background-color: $light-pink;
+        }
+
+        img {
+            width: 80px;
+        }
+    }
+}
+
+.decorative-img {
+    display: none;
+    background-image: url("../images/pancake-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include respond-to("medium") {
+        display: block;
+        width: 50%;
+    }
+}
+
+.golden-stars {
+    color: $yellow;
+    padding-left: 2em;
+}

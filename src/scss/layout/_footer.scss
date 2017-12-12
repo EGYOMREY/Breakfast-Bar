@@ -1,0 +1,20 @@
+.footer {
+    @extend %grid;
+
+    @extend .container;
+
+    color: $white;
+    background-color: $brown;
+    align-items: center;
+    flex-direction: column;
+
+    @include respond-to("medium") {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+
+    img {
+        align-self: center;
+    }
+}

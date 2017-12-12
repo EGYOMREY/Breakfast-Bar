@@ -1,0 +1,21 @@
+// -----------------------------------------------------------------------------
+// This component is in the SANDWICH section, displays the time to cook
+// -----------------------------------------------------------------------------
+
+.menu-item {
+    line-height: 1.1em;
+    padding-bottom: 3em;
+
+    &__text {
+        color: $light-gray;
+        background: rgba(73, 69, 70, 0.5);
+        padding: 0 1em;
+    }
+
+    &__number {
+        font-size: 2.5rem;
+        color: $yellow;
+        background: rgba(73, 69, 70, 0.5);
+        padding: 0 0.1em;
+    }
+}

@@ -1,0 +1,34 @@
+// -----------------------------------------------------------------------------
+// This Component is in the SANDWICH section
+// -----------------------------------------------------------------------------
+
+.ingredient{
+	@extend %grid;
+	text-align: center;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	line-height: 1rem;
+
+	@include respond-to("medium") {
+		flex-direction: row;
+		text-align: left;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+
+            border: none;
+            
+        }
+
+
+	
+
+	h3{
+		color: $green;
+		font-size: 1.5rem;
+	}
+
+	
+	
+}
