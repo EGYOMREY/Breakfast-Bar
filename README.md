@@ -16,7 +16,7 @@ All the source code is in the `src` folder. The minified version is in the `buil
 
 If you'd like to develop it further, dive into the project's folder and type `npm install` so you can work with the dependencies I used. Then, type `gulp` in your command line and browsersync will open a tab pointing to your `http://localhost:3000/`. The files you are going to be working in, are in the `src` folder.
 
-If you only want to check the page in your computer, go to `src` and open `index.html`.
+If you only want to check the page in your computer, go to `build` and open `index.html`.
 
 ### Tools used
 
