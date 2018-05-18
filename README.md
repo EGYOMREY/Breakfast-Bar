@@ -1,9 +1,12 @@
 # The Breakfast Bar
 
-I took [this design](https://egyomrey.github.io/Breakfast-Bar/Mockup%20from%20Dribbble.jpg) from Dribble.com and built a single page website with it.
+I took [this design](https://egyomrey.github.io/Breakfast-Bar/Mockup%20from%20Dribbble.jpg) from Dribble.com and built a single page website with it. [Try it](https://egyomrey.github.io/Breakfast-Bar/build/index.html):arrow_upper_right:
 
-[DIRECT LINK](https://egyomrey.github.io/Breakfast-Bar/build/index.html)
+## Desktop
+![image](https://i.imgur.com/EEvod59.png)
 
+## Mobile
+![image](https://i.imgur.com/pDTMOGn.png)
 
 ## How to use this project?
 
@@ -14,7 +17,7 @@ All the source code is in the `src` folder. The minified version is in the `buil
 
 - You can also fork or directly download it
 
-If you'd like to develop it further, dive into the project's folder and type `npm install` so you can work with the dependencies I used. Then, type `gulp` in your command line and browsersync will open a tab pointing to your `http://localhost:3000/`. The files you are going to be working in, are in the `src` folder.
+If you'd like to develop it further, dive into the project's folder and type `npm install` so you can install and work with the dependencies I used. Then, type `gulp` in your command line and browsersync will open a tab pointing to your `http://localhost:3000/`. The files you are going to be working in, are in the `src` folder.
 
 If you only want to check the page in your computer, go to `build` and open `index.html`.
 
